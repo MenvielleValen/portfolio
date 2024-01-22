@@ -3,7 +3,7 @@ import "./Hero.css";
 
 export const Hero = () => {
   const downloadResume = () => {
-    const rutaPDF = "/assets/docs/ValentinMenvielleCandiaResume.pdf";
+    const rutaPDF = "/assets/docs/ValentinMenvielleCandiaCV.pdf";
     window.open(process.env.PUBLIC_URL + rutaPDF, "_blank");
   };
 
