@@ -1,3 +1,47 @@
-section{
-    min-height: 50vh;
+.title-job{
+    font-size: 26px;
+    color: var(--secondary-color);
+    margin: 0;
 }
+.experiences-container{
+    width: 90%;
+    margin-bottom: 100px;
+}
+.subtitle{
+    font-size: 14px;
+    color: #ccc;
+}
+.company{
+    font-size: 16 ;
+    color: #ccc;
+}
+.resume{
+    font-size: 16 ;
+}
+
+.experience-link{
+    color: var(--secondary-color);
+}
+
+@media (max-width: 1250px) {
+    /* … */
+    .experiences-container{
+        width: 100%;
+    }
+    .line{
+       display: none;
+       visibility: hidden;
+    }
+    .title-job{
+        font-size: 22px !important;
+    }
+    .subtitle{
+        font-size: 14px !important;
+    }
+    .company{
+        font-size: 14px !important;
+    }
+    .resume{
+        font-size: 16px !important;
+    }
+  }

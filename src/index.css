@@ -16,6 +16,19 @@ code {
     monospace;
 }
 
+.row{
+  display: flex;
+  align-items: center;
+}
+
+.gap-10{
+  gap: 10px
+}
+
+.gap-16{
+  gap: 16px
+}
+
 p{
   margin: 0;
   padding: 0;

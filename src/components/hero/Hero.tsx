@@ -17,7 +17,7 @@ export const Hero = () => {
           <h1 className="title">
             Hi, I'm <span className="text-blue">Valentín 👋</span>
           </h1>
-          <p>
+          <p className="description">
             I'm <span className="text-blue bold">software developer</span> with over 2 years experience. I am currently
             working with Angular and Typescript. I have experience with React,
             React Native in frontend and NestJS, NextJS, Express in backend
