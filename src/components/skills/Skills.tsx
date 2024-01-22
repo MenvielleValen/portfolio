@@ -54,7 +54,7 @@ export const Skills = () => {
        <div className="skills-container">
        {
             skills.map((s, i) => (
-                <div key={`skill_${i}`} className="card" style={ {flexGrow: 1} }>
+                <div key={`skill_${i}_${s.name}`} className="card" style={ {flexGrow: 1} }>
                     <div style={{width: '50%', display: 'flex', justifyContent: 'flex-start'}} className="icon-container">
                     {s.icon}
                     </div>

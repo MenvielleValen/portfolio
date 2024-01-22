@@ -70,7 +70,7 @@ export const Experience = () => {
             <div style={{marginTop: 10}}>
                 {
                     e.links?.map((l, i) => (
-                        <div className="row gap-10">
+                        <div className="row gap-10" key={`${l.href}_link_${i}`}>
                             <IoIosLink color="#fff" size={18}/>
                             <a className="experience-link" style={{textDecoration: "none"}} href={l.href} target="__blank">{l.title}</a>
                         </div>
