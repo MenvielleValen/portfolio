@@ -1,20 +1,19 @@
-.customButton{
+.toggleButton{
     background-color: transparent;
     border-color: var(--secondary-color);
     color: var(--secondary-color);
     outline: none;
     border-style: solid;
-    border-radius: 40px;
 
-    min-width: 150px;
-    padding: 10px;
+    width: 50px;;
+    padding: 5px;
 
     cursor: pointer;
 
     transition: 0.5s;
 }
 
-.customButton:hover{
+.toggleButton-active{
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     color: #070a11;
