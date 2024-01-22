@@ -1,0 +1,11 @@
+button{
+    background-color: transparent;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+    outline: none;
+    border-style: solid;
+    border-radius: 40px;
+
+    min-width: 150px;
+    padding: 10px;
+}

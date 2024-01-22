@@ -1,0 +1,54 @@
+.title {
+    color: #ffffff;
+    font-size: 38px;
+}
+
+.text-blue {
+    color: #22d3ee;
+}
+
+.hero{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-hero{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.actions-container{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 1250px) {
+    /* … */
+
+    .actions-container{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-body{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .app-container{
+      width: 90%;
+    }
+    .title{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+  }

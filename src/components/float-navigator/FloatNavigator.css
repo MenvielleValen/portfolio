@@ -1,0 +1,39 @@
+.float-navigator{
+    position: fixed;
+    right: 20px;
+    top: 50%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dot-item-active{
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    border: 1px solid  var(--secondary-color);
+    cursor: pointer;
+}
+
+.dot-item{
+    width: 10px;
+    height: 10px;
+    background-color: #030407;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+    /* … */
+    .float-navigator {
+        display: none;
+        visibility: hidden;
+    }
+  }
+  
