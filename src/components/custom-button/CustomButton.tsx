@@ -1,7 +1,11 @@
 import "./CustomButton.css";
 
-export const CustomButton = ({children}: React.PropsWithChildren) => {
+interface IProps {
+    onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
+
+export const CustomButton = ({children, onClick}: React.PropsWithChildren<IProps>) => {
   return (
-    <button>{children}</button>
+    <button onClick={onClick}>{children}</button>
   )
 }

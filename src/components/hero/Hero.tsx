@@ -1,7 +1,18 @@
 import { CustomButton } from "../custom-button/CustomButton";
 import "./Hero.css";
 
+
+
 export const Hero = () => {
+
+    const downloadResume = () => {
+        // Ruta relativa al archivo PDF en la carpeta public
+        const rutaPDF = '/assets/docs/ValentinMenvielleCandiaResume.pdf';
+        
+        // Abre el PDF en una nueva ventana o pestaña del navegador
+        window.open(process.env.PUBLIC_URL + rutaPDF, '_blank');
+    }   
+
   return (
     <section className="hero">
       <div className="hero-body">
@@ -16,7 +27,7 @@ export const Hero = () => {
           </p>
 
           <div className="actions-container">
-            <CustomButton>Download Resume</CustomButton>
+            <CustomButton onClick={downloadResume}>Download Resume</CustomButton>
           </div>
         </div>
       </div>
