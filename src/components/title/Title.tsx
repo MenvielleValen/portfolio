@@ -4,10 +4,10 @@ import "./Title.css";
 import { IconType } from "react-icons";
 
 interface IProps {
-    icon?: React.ReactNode
+  icon?: React.ReactNode;
 }
 
-export const Title = ({ children, icon}: PropsWithChildren<IProps>) => {
+export const Title = ({ children, icon }: PropsWithChildren<IProps>) => {
   return (
     <div className="container">
       <div className="icon-container">

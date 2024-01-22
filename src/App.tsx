@@ -14,7 +14,9 @@ function App() {
       <div className="app-container" id="about">
         <header className="header-container">
           <div className="header-links-container">
-            <a  href="mailto:menvielle.valen@gmail.com">menvielle.valen@gmail.com</a>
+            <a href="mailto:menvielle.valen@gmail.com">
+              menvielle.valen@gmail.com
+            </a>
             <div className="social-icons-container">
               <a href="https://github.com/MenvielleValen" target="__blank">
                 <FaGithub size={26} />
@@ -31,33 +33,35 @@ function App() {
         <div>
           <Hero />
         </div>
-        <div >
+        <div>
           <Title icon={<CiStar size={40} color="#fff" />}>Skills</Title>
           <Skills />
         </div>
-        <div style={{marginTop: 50}}>
+        <div style={{ marginTop: 50 }}>
           <Title icon={<MdOutlineWorkOutline size={40} color="#fff" />}>
             Experience
           </Title>
-          <Experience/>
+          <Experience />
         </div>
       </div>
       <footer>
         <div className="footer-body">
           <div className="header-links-container">
-              <a href="mailto:menvielle.valen@gmail.com">menvielle.valen@gmail.com</a>
-              <div className="social-icons-container">
-                <a href="https://github.com/MenvielleValen" target="__blank">
-                  <FaGithub size={26} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/valentinmenviellecandia/"
-                  target="__blank"
-                >
-                  <FaLinkedin size={26} />
-                </a>
-              </div>
+            <a href="mailto:menvielle.valen@gmail.com">
+              menvielle.valen@gmail.com
+            </a>
+            <div className="social-icons-container">
+              <a href="https://github.com/MenvielleValen" target="__blank">
+                <FaGithub size={26} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/valentinmenviellecandia/"
+                target="__blank"
+              >
+                <FaLinkedin size={26} />
+              </a>
             </div>
+          </div>
         </div>
       </footer>
     </div>
