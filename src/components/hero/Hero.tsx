@@ -6,10 +6,7 @@ import "./Hero.css";
 export const Hero = () => {
 
     const downloadResume = () => {
-        // Ruta relativa al archivo PDF en la carpeta public
         const rutaPDF = '/assets/docs/ValentinMenvielleCandiaResume.pdf';
-        
-        // Abre el PDF en una nueva ventana o pestaña del navegador
         window.open(process.env.PUBLIC_URL + rutaPDF, '_blank');
     }   
 

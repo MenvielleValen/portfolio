@@ -93,15 +93,15 @@ function App() {
         <div ref={heroRef}>
           <Hero />
         </div>
+        <div ref={skillsRef}>
+          <Title icon={<CiStar size={40} color="#fff" />}>Skills</Title>
+          <Skills />
+        </div>
         <div ref={projectsRef}>
           <Title icon={<MdOutlineWorkOutline size={40} color="#fff" />}>
             Experience
           </Title>
           <Experience/>
-        </div>
-        <div ref={skillsRef}>
-          <Title icon={<CiStar size={40} color="#fff" />}>Skills</Title>
-          <Skills />
         </div>
       </div>
       <footer>
