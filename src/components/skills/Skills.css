@@ -4,18 +4,6 @@ section {
   justify-content: center;
 }
 
-.card {
-  background-color: #00000060;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  color: #fff;
-  gap: 16px;
-}
-
 .skills-container {
   display: flex;
   gap: 20px;

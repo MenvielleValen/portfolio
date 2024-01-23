@@ -1,3 +1,4 @@
+import { Card } from "../skills/Card/Card";
 import "./Experience.css";
 import { IoIosLink } from "react-icons/io";
 
@@ -29,8 +30,8 @@ export const Experience = () => {
         }}
       >
         {experiences.map((e, i) => (
-          <div key={e.title + i} style={{ position: "relative" }}>
-            <div className="line">
+          <Card key={e.title + i} style={{ position: "relative" }}>
+            {/* <div className="line">
               <div
                 style={{
                   position: "absolute",
@@ -52,7 +53,7 @@ export const Experience = () => {
                   borderLeft: "1px solid #ccc",
                 }}
               ></div>
-            </div>
+            </div> */}
             <div
               style={{
                 display: "flex",
@@ -82,7 +83,7 @@ export const Experience = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </section>

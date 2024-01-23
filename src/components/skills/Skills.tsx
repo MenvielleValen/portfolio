@@ -6,6 +6,7 @@ import { DiMongodb } from "react-icons/di";
 import { SiMicrosoftsqlserver } from "react-icons/si";
 import { SiJira } from "react-icons/si";
 import { GiJesterHat } from "react-icons/gi";
+import { Card } from "./Card/Card";
 
 const skills = [
   {
@@ -52,31 +53,29 @@ export const Skills = () => {
     <section>
       <div className="skills-container">
         {skills.map((s, i) => (
-          <div
-            key={`skill_${i}_${s.name}`}
-            className="card"
-            style={{ flexGrow: 1 }}
-          >
-            <div
-              style={{
-                width: "50%",
-                display: "flex",
-                justifyContent: "flex-start",
-              }}
-              className="icon-container"
-            >
-              {s.icon}
+          <Card key={`skill_${i}_${s.name}`} style={{ flexGrow: 1 }}>
+            <div style={{display: 'flex', justifyContent: 'center', gap: 16, alignItems: 'center'}}>
+              <div
+                style={{
+                  width: "50%",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                }}
+                className="icon-container"
+              >
+                {s.icon}
+              </div>
+              <p
+                style={{
+                  width: "50%",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                }}
+              >
+                {s.name}
+              </p>
             </div>
-            <p
-              style={{
-                width: "50%",
-                display: "flex",
-                justifyContent: "flex-start",
-              }}
-            >
-              {s.name}
-            </p>
-          </div>
+          </Card>
         ))}
       </div>
     </section>

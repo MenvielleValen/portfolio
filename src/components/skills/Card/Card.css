@@ -1,0 +1,24 @@
+.card {
+  background-color: #1118275d;
+  border-radius: 10px;
+  margin-bottom: 20px;
+    position: relative;
+  padding: 2rem;
+  color: #fff;
+  gap: 16px;
+  backdrop-filter: blur(100px);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border: 1px solid #494949;
+  overflow: hidden;
+  min-width: 150px;
+  cursor: default;
+}
+
+.pointer-card {
+    background-color: #22d3ee;
+    filter: blur(70px);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+}
