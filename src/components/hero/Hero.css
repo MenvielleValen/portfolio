@@ -6,7 +6,10 @@
 .text-blue {
   color: #22d3ee;
 }
-
+.avatar-mobile{
+  display: none;
+  visibility: hidden;
+}
 .hero {
   min-height: 60vh;
   display: flex;
@@ -19,11 +22,16 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.avatar{
+  height: 14rem;
+  width: 14rem;
+  border: 2px solid var(--secondary-color);
+}
 .description {
   font-size: 18px;
   color: #fff;
   font-weight: 400;
+  width: 80%;
 }
 
 .image-hero {
@@ -71,5 +79,17 @@
   }
   .description {
     text-align: center;
+    width: 100%;
+  }
+  .avatar-mobile{
+    display: block;
+    visibility: visible;
+    height: 150px;
+    width: 150px;
+    border: 2px solid var(--secondary-color);
+  }
+  .avatar{
+    visibility: hidden;
+    display: none;
   }
 }

@@ -52,6 +52,7 @@ export const Hero = ({ lang = "en" }: Props) => {
   return (
     <section className="hero">
       <div className="hero-body">
+      <img className="avatar-mobile" style={{borderRadius: '50%'}} src="./assets/images/avatar.jpeg"/>
         <div>
           {hero.title[lang]}
           {hero.description[lang]}
@@ -72,6 +73,7 @@ export const Hero = ({ lang = "en" }: Props) => {
             </div>
           </div>
         </div>
+        <img className="avatar" style={{borderRadius: '50%'}} src="./assets/images/avatar.jpeg"/>
       </div>
     </section>
   );
