@@ -74,13 +74,13 @@ function App() {
           <Hero lang={lang} />
         </div>
         <div>
-          <Title icon={<CiStar size={40} color="#fff" />}>
+          <Title icon={<CiStar size={40} color="#22d3ee" strokeWidth="1"/>}>
             {home.skillsTitle[lang]}
           </Title>
           <Skills />
         </div>
         <div style={{ marginTop: 50 }}>
-          <Title icon={<MdOutlineWorkOutline size={40} color="#fff" />}>
+          <Title icon={<MdOutlineWorkOutline size={40} color="#22d3ee" />}>
             {home.experienceTitle[lang]}
           </Title>
           <Experience />

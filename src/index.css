@@ -9,6 +9,8 @@ body {
   --primary-color: #111827;
   background-color: var(--primary-color);
   scroll-behavior: smooth;
+  background-image: url("../src/assets/images/bg-grid.png");
+
 }
 
 code {
