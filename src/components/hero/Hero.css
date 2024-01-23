@@ -27,6 +27,12 @@
   width: 14rem;
   border: 2px solid var(--secondary-color);
 }
+.avatar-placeholder{
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.411);
+}
 .description {
   font-size: 18px;
   color: #fff;
@@ -87,6 +93,12 @@
     height: 150px;
     width: 150px;
     border: 2px solid var(--secondary-color);
+  }
+  .avatar-placeholder{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.411);
   }
   .avatar{
     visibility: hidden;

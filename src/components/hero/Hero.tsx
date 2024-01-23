@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CustomButton } from "../custom-button/CustomButton";
 import "./Hero.css";
+import { Suspense } from "react";
 
 const hero = {
   title: {
@@ -52,7 +53,13 @@ export const Hero = ({ lang = "en" }: Props) => {
   return (
     <section className="hero">
       <div className="hero-body">
-      <img className="avatar-mobile" style={{borderRadius: '50%'}} src="./assets/images/avatar.jpeg"/>
+        <Suspense fallback={<div className="avatar-placeholder"></div>}>
+          <img
+            className="avatar-mobile"
+            style={{ borderRadius: "50%" }}
+            src="./assets/images/avatar.jpeg"
+          />
+        </Suspense>
         <div>
           {hero.title[lang]}
           {hero.description[lang]}
@@ -73,7 +80,13 @@ export const Hero = ({ lang = "en" }: Props) => {
             </div>
           </div>
         </div>
-        <img className="avatar" style={{borderRadius: '50%'}} src="./assets/images/avatar.jpeg"/>
+        <Suspense fallback={<div className="avatar-placeholder"></div>}>
+          <img
+            className="avatar"
+            style={{ borderRadius: "50%" }}
+            src="./assets/images/avatar.jpeg"
+          />
+        </Suspense>
       </div>
     </section>
   );
