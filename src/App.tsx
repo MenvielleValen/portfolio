@@ -95,7 +95,7 @@ function App() {
           <Title icon={<MdOutlineWorkOutline size={40} color="#22d3ee" />}>
             {home.experienceTitle[lang]}
           </Title>
-          <Experience />
+          <Experience lang={lang} />
         </div>
       </div>
       <footer>

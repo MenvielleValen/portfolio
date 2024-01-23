@@ -7,44 +7,54 @@ import { SiMicrosoftsqlserver } from "react-icons/si";
 import { SiJira } from "react-icons/si";
 import { GiJesterHat } from "react-icons/gi";
 import { Card } from "./Card/Card";
+import { FaMobileAlt } from "react-icons/fa";
 
 const skills = [
   {
-    name: "React",
-    icon: <FaReact size={80} color="#087EA4" />,
-  },
-  {
     name: "Angular",
     icon: <FaAngular size={80} color="#c3002f" />,
+    colorHover: "#c3002f",
+  },
+  {
+    name: "React",
+    icon: <FaReact size={80} color="#087EA4" />,
+    colorHover: "#087EA4",
   },
   {
     name: "React Native",
-    icon: <TbBrandReactNative size={80} color="#087EA4" />,
+    icon: <FaReact size={80} color="#087EA4" />,
+    colorHover: "#087EA4",
   },
   {
     name: "NestJS",
     icon: <SiNestjs size={80} color="#ea2845" />,
+    colorHover: "#ea2845",
   },
   {
     name: "NodeJS",
     icon: <FaNodeJs size={80} color="#659a60" />,
+    colorHover: "#659a60",
   },
   {
     name: "Jest",
     icon: <GiJesterHat size={80} color="#c21325" />,
+    colorHover: "#c21325",
   },
   {
     name: "MongoDB",
     icon: <DiMongodb size={80} color="#00ed64" />,
+    colorHover: "#00ed64",
   },
   {
     name: "SQL / SQLServer",
     icon: <SiMicrosoftsqlserver size={80} color="#8d9298" />,
+    colorHover: "#8d9298",
     flex: 1,
   },
   {
     name: "Jira",
     icon: <SiJira size={80} color="#2580f7" />,
+    colorHover: "#2580f7",
   },
 ];
 
@@ -53,8 +63,8 @@ export const Skills = () => {
     <section>
       <div className="skills-container">
         {skills.map((s, i) => (
-          <Card key={`skill_${i}_${s.name}`} style={{ flexGrow: 1 }}>
-            <div style={{display: 'flex', justifyContent: 'center', gap: 16, alignItems: 'center'}}>
+          <Card key={`skill_${i}_${s.name}`} style={{ flexGrow: 1 }} pointerColor={s.colorHover}>
+            <div style={{display: 'flex', justifyContent: 'center', gap: 16, alignItems: 'center', fontWeight: 800}}>
               <div
                 style={{
                   width: "50%",

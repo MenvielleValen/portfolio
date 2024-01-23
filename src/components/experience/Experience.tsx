@@ -1,24 +1,42 @@
+import { PropsWithChildren } from "react";
 import { Card } from "../skills/Card/Card";
 import "./Experience.css";
 import { IoIosLink } from "react-icons/io";
 
-const experiences = [
-  {
-    title: "SSR Software developer",
-    company: "COA Tecnología de la Información Aplicada",
-    subtitle: "oct. 2021 - present",
-    resume:
-      "TypeScript · Angular · Integración continua y entrega continua (CI/CD) · Transferencia de Estado Representacional (REST) · Desarrollo de software · Desarrollo front end · NgRx · Angular Material · SQL · Microsoft SQL Server",
-    links: [
-      {
-        title: "COA Website",
-        href: "https://www.coa.com.ar/",
-      },
-    ],
-  },
-];
+const experiences = {
+  es: [
+    {
+      title: "SSR Software developer",
+      company: "COA Tecnología de la Información Aplicada",
+      subtitle: "oct. 2021 - actualidad",
+      resume:
+        "TypeScript · Angular · Integración continua y entrega continua (CI/CD) · Transferencia de Estado Representacional (REST) · Desarrollo de software · Desarrollo front end · NgRx · Angular Material · SQL · Microsoft SQL Server",
+      links: [
+        {
+          title: "COA Website",
+          href: "https://www.coa.com.ar/",
+        },
+      ],
+    },
+  ],
+  en: [
+    {
+      title: "SSR Software developer",
+      company: "COA Tecnología de la Información Aplicada",
+      subtitle: "oct. 2021 - present",
+      resume:
+        "TypeScript · Angular · Integración continua y entrega continua (CI/CD) · API REST · Software development · Frontend development · NgRx · Angular Material · SQL · Microsoft SQL Server",
+      links: [
+        {
+          title: "COA Website",
+          href: "https://www.coa.com.ar/",
+        },
+      ],
+    },
+  ]
+};
 
-export const Experience = () => {
+export const Experience = ({lang}: PropsWithChildren<{lang: 'es' | 'en'}>) => {
   return (
     <section className="section-experience" style={{ position: "relative" }}>
       <div
@@ -29,7 +47,7 @@ export const Experience = () => {
           gap: 20,
         }}
       >
-        {experiences.map((e, i) => (
+        {experiences[lang].map((e, i) => (
           <Card key={e.title + i} style={{ position: "relative" }}>
             {/* <div className="line">
               <div

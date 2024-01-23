@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, useEffect, useRef, useState } from "react";
 import "./Card.css";
 
-export const Card = ({ children, ...props }: PropsWithChildren<any>) => {
+export const Card = ({ children, pointerColor= null, styles = {}, ...props }: PropsWithChildren<any>) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = useState(false);
   const card = useRef<HTMLDivElement>(null);
@@ -20,6 +20,7 @@ export const Card = ({ children, ...props }: PropsWithChildren<any>) => {
       ref={card}
       className="card"
       {...props}
+      style={{...styles}}
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -30,6 +31,7 @@ export const Card = ({ children, ...props }: PropsWithChildren<any>) => {
           className="pointer-card"
           style={{
             position: "absolute",
+            backgroundColor: pointerColor || null,
             left: mousePosition.x,
             top: mousePosition.y,
           }}

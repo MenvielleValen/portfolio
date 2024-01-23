@@ -5,9 +5,10 @@ section {
 }
 
 .skills-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+  grid-template-rows: repeat(3, auto); /* Crea 3 filas de 100px de altura cada una */
+  gap: 10px; /* Espacio entre las celdas */
   width: 100%;
 }
 
@@ -17,7 +18,9 @@ section {
 
 @media (max-width: 1250px) {
   /* … */
-  .card {
-    width: 100%;
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
