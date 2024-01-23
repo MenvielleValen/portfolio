@@ -34,9 +34,9 @@ const langOptions = [
 ];
 
 function App() {
+
   const localStorageLang = (): "es" | "en" => {
     const _lang = localStorage.getItem("lang");
-    console.log(_lang);
     if (!_lang) return "es";
     if (_lang !== "es" && _lang !== "en") return "es";
     return _lang as "es" | "en";
@@ -45,13 +45,25 @@ function App() {
   const [lang, setLang] = useState<"en" | "es">(localStorageLang);
 
   const changeLang = (value: string) => {
-    setLang(value as "en" | "es");
-    const html = document.getElementById("app-head");
-    if (html) {
-      html.setAttribute("lang", value);
-    }
-    localStorage.setItem("lang", value);
+    window.location.href = value;
   };
+
+  useEffect(() => {
+    const langUrl = window.location.href.split("/");
+
+    if (
+      langUrl[3] &&
+      (langUrl[3] === "en" || langUrl[3] === "es") &&
+      langUrl[3] !== lang
+    ) {
+      setLang(langUrl[3]);
+      const html = document.getElementById("app-head");
+      if (html) {
+        html.setAttribute("lang", langUrl[3]);
+      }
+      localStorage.setItem("lang", langUrl[3]);
+    }
+  }, [window.location.href]);
 
   return (
     <div className="App">
@@ -74,7 +86,7 @@ function App() {
           <Hero lang={lang} />
         </div>
         <div>
-          <Title icon={<CiStar size={40} color="#22d3ee" strokeWidth="1"/>}>
+          <Title icon={<CiStar size={40} color="#22d3ee" strokeWidth="1" />}>
             {home.skillsTitle[lang]}
           </Title>
           <Skills />
