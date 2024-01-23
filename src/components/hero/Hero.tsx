@@ -1,3 +1,4 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { CustomButton } from "../custom-button/CustomButton";
 import "./Hero.css";
 
@@ -44,7 +45,7 @@ interface Props {
 
 export const Hero = ({ lang = "en" }: Props) => {
   const downloadResume = () => {
-    const rutaPDF = "/assets/docs/ValentinMenvielleCandiaCV.pdf";
+    const rutaPDF = `/assets/docs/${lang}/ValentinMenvielleCandiaResume.pdf`;
     window.open(process.env.PUBLIC_URL + rutaPDF, "_blank");
   };
 
@@ -58,6 +59,17 @@ export const Hero = ({ lang = "en" }: Props) => {
             <CustomButton onClick={downloadResume}>
               {hero.buttonResume[lang]}
             </CustomButton>
+            <div className="social-icons-container">
+              <a href="https://github.com/MenvielleValen" target="__blank">
+                <FaGithub size={26} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/valentinmenviellecandia/"
+                target="__blank"
+              >
+                <FaLinkedin size={26} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

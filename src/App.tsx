@@ -34,14 +34,13 @@ const langOptions = [
 ];
 
 function App() {
-
   const localStorageLang = (): "es" | "en" => {
     const _lang = localStorage.getItem("lang");
-    console.log(_lang)
-    if(!_lang) return "es";
-    if(_lang !== "es" && _lang !== "en") return "es";
+    console.log(_lang);
+    if (!_lang) return "es";
+    if (_lang !== "es" && _lang !== "en") return "es";
     return _lang as "es" | "en";
-  }
+  };
 
   const [lang, setLang] = useState<"en" | "es">(localStorageLang);
 
@@ -58,23 +57,16 @@ function App() {
     <div className="App">
       <div className="app-container" id="about">
         <header className="header-container">
-          <div>
-            <ToggleButton options={langOptions} onChange={changeLang} active={lang} />
-          </div>
           <div className="header-links-container">
             <a href="mailto:menvielle.valen@gmail.com">
               menvielle.valen@gmail.com
             </a>
-            <div className="social-icons-container">
-              <a href="https://github.com/MenvielleValen" target="__blank">
-                <FaGithub size={26} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/valentinmenviellecandia/"
-                target="__blank"
-              >
-                <FaLinkedin size={26} />
-              </a>
+            <div>
+              <ToggleButton
+                options={langOptions}
+                onChange={changeLang}
+                active={lang}
+              />
             </div>
           </div>
         </header>
