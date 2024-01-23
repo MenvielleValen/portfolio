@@ -17,20 +17,20 @@ const hero = {
   },
   description: {
     en: (
-      <p className="description">
+      <h2 className="description">
         I'm <span className="text-blue bold">software developer</span> with over
         2 years experience. I am currently working with Angular and Typescript.
         I have experience with React, React Native in frontend and NestJS,
         NextJS, Express in backend.
-      </p>
+      </h2>
     ),
     es: (
-      <p className="description">
+      <h2 className="description">
         Soy <span className="text-blue bold">software developer</span> con más
         de 2 años de experiencia. Actualmente estoy trabajando con Angular y
         Typecript. Tengo experiencia con React, React Native en frontend y
         NestJS, NextJS, Express en backend.
-      </p>
+      </h2>
     ),
   },
   buttonResume: {
