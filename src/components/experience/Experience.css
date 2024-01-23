@@ -7,6 +7,9 @@
     width: 100%;
     margin-bottom: 100px;
 }
+.experience-header{
+    justify-content: space-between;
+}
 .subtitle{
     font-size: 14px;
     color: #ccc;
@@ -17,6 +20,7 @@
 }
 .resume{
     font-size: 16 ;
+    margin-bottom:  2rem;
 }
 
 .experience-link{
@@ -27,6 +31,10 @@
     /* … */
     .experiences-container{
         width: 100%;
+    }
+    .experience-header{
+        display: flex;
+        flex-direction: column;
     }
     .line{
        display: none;

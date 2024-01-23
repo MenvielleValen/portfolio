@@ -34,8 +34,8 @@ const hero = {
     ),
   },
   buttonResume: {
-    es: "Descargar CV",
-    en: "Download Resume",
+    es: "Curriculum",
+    en: "Resume",
   },
 };
 

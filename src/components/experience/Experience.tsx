@@ -33,10 +33,12 @@ const experiences = {
         },
       ],
     },
-  ]
+  ],
 };
 
-export const Experience = ({lang}: PropsWithChildren<{lang: 'es' | 'en'}>) => {
+export const Experience = ({
+  lang,
+}: PropsWithChildren<{ lang: "es" | "en" }>) => {
   return (
     <section className="section-experience" style={{ position: "relative" }}>
       <div
@@ -49,40 +51,17 @@ export const Experience = ({lang}: PropsWithChildren<{lang: 'es' | 'en'}>) => {
       >
         {experiences[lang].map((e, i) => (
           <Card key={e.title + i} style={{ position: "relative" }}>
-            {/* <div className="line">
-              <div
-                style={{
-                  position: "absolute",
-                  width: "10px",
-                  height: "10px",
-                  borderRadius: "50%",
-                  background: "#ccc",
-                  margin: "auto",
-                  left: "-5.5%",
-                  top: "10%",
-                }}
-              ></div>
-              <div
-                style={{
-                  position: "absolute",
-                  left: "-5%",
-                  top: 0,
-                  bottom: 0,
-                  borderLeft: "1px solid #ccc",
-                }}
-              ></div>
-            </div> */}
             <div
               style={{
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
               }}
+              className="experience-header"
             >
               <h4 className="title-job">{e.title}</h4>
               <p className="subtitle">{e.subtitle}</p>
             </div>
             <p className="company">{e.company}</p>
+
             <hr />
             <p className="resume">{e.resume}</p>
 

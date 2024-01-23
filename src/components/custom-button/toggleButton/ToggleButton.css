@@ -1,5 +1,5 @@
 .toggleButton {
-  background-color: transparent;
+  background-color: var(--primary-color);
   border-color: var(--secondary-color);
   color: var(--secondary-color);
   outline: none;
