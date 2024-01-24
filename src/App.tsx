@@ -105,12 +105,13 @@ function App() {
               menvielle.valen@gmail.com
             </a>
             <div className="social-icons-container">
-              <a href="https://github.com/MenvielleValen" target="__blank">
+              <a href="https://github.com/MenvielleValen" target="__blank" aria-label="Valentin Menvielle Candia GITHUB">
                 <FaGithub size={26} />
               </a>
               <a
                 href="https://www.linkedin.com/in/valentinmenviellecandia/"
                 target="__blank"
+                aria-label="Valentin Menvielle Candia LINKEDIN"
               >
                 <FaLinkedin size={26} />
               </a>

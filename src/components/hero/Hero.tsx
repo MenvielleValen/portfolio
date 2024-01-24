@@ -68,12 +68,13 @@ export const Hero = ({ lang = "en" }: Props) => {
               {hero.buttonResume[lang]}
             </CustomButton>
             <div className="social-icons-container">
-              <a href="https://github.com/MenvielleValen" target="__blank">
+              <a href="https://github.com/MenvielleValen" target="__blank" aria-label="Valentin Menvielle Candia GITHUB">
                 <FaGithub size={26} />
               </a>
               <a
                 href="https://www.linkedin.com/in/valentinmenviellecandia/"
                 target="__blank"
+                aria-label="Valentin Menvielle Candia LINKEDIN"
               >
                 <FaLinkedin size={26} />
               </a>
@@ -83,6 +84,7 @@ export const Hero = ({ lang = "en" }: Props) => {
         <Suspense fallback={<div className="avatar-placeholder"></div>}>
           <img
             className="avatar"
+            alt="Valentin Menvielle Candia"
             style={{ borderRadius: "50%" }}
             src="./assets/images/avatar.jpeg"
           />
