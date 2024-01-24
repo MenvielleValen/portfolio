@@ -57,7 +57,7 @@ export const Hero = ({ lang = "en" }: Props) => {
           <img
             className="avatar-mobile"
             style={{ borderRadius: "50%" }}
-            src="./assets/images/avatar.jpeg"
+            src="./assets/images/avatar.webp"
           />
         </Suspense>
         <div>
@@ -86,7 +86,7 @@ export const Hero = ({ lang = "en" }: Props) => {
             className="avatar"
             alt="Valentin Menvielle Candia"
             style={{ borderRadius: "50%" }}
-            src="./assets/images/avatar.jpeg"
+            src="./assets/images/avatar.webp"
           />
         </Suspense>
       </div>
