@@ -58,6 +58,7 @@ export const Hero = ({ lang = "en" }: Props) => {
             className="avatar-mobile"
             style={{ borderRadius: "50%" }}
             src="./assets/images/avatar.webp"
+            alt="Valentin Menvielle Candia"
           />
         </Suspense>
         <div>
