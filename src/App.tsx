@@ -10,8 +10,13 @@ import { Experience } from "./components/experience/Experience";
 import { useEffect, useState } from "react";
 import { CustomButton } from "./components/custom-button/CustomButton";
 import { ToggleButton } from "./components/custom-button/toggleButton/ToggleButton";
+import { Projects } from "./components/projects/Projects";
 
 const home = {
+  projectsTitle: {
+    es: "Proyectos",
+    en: "Projects",
+  },
   experienceTitle: {
     es: "Experiencia",
     en: "Experience",
@@ -34,7 +39,6 @@ const langOptions = [
 ];
 
 function App() {
-
   const localStorageLang = (): "es" | "en" => {
     const _lang = localStorage.getItem("lang");
     if (!_lang) return "es";
@@ -85,7 +89,13 @@ function App() {
         <div>
           <Hero lang={lang} />
         </div>
-        <div>
+        <div style={{ marginTop: 50 }}>
+          <Title icon={<MdOutlineWorkOutline size={40} color="#22d3ee" />}>
+            {home.projectsTitle[lang]}
+          </Title>
+          <Projects lang={lang} />
+        </div>
+        <div style={{ marginTop: 50 }}>
           <Title icon={<CiStar size={40} color="#22d3ee" strokeWidth="1" />}>
             {home.skillsTitle[lang]}
           </Title>
@@ -105,7 +115,11 @@ function App() {
               menvielle.valen@gmail.com
             </a>
             <div className="social-icons-container">
-              <a href="https://github.com/MenvielleValen" target="__blank" aria-label="Valentin Menvielle Candia GITHUB">
+              <a
+                href="https://github.com/MenvielleValen"
+                target="__blank"
+                aria-label="Valentin Menvielle Candia GITHUB"
+              >
                 <FaGithub size={26} />
               </a>
               <a
