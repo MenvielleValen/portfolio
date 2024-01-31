@@ -50,7 +50,11 @@ export const Experience = ({
         }}
       >
         {experiences[lang].map((e, i) => (
-          <Card key={e.title + i} style={{ position: "relative" }}>
+          <Card
+            key={e.title + i}
+            style={{ position: "relative" }}
+            data-aos="fade-up"
+          >
             <div
               style={{
                 display: "flex",

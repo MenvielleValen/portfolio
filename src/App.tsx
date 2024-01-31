@@ -11,6 +11,8 @@ import { useEffect, useState } from "react";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { ToggleButton } from "./components/custom-button/toggleButton/ToggleButton";
 import { Projects } from "./components/projects/Projects";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const home = {
   projectsTitle: {
@@ -53,6 +55,18 @@ function App() {
   };
 
   useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 60, // offset (in px) from the original trigger point
+      delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1000, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom",
+    });
+  }, []);
+
+  useEffect(() => {
     const langUrl = window.location.href.split("/");
 
     if (
@@ -86,23 +100,25 @@ function App() {
             </div>
           </div>
         </header>
-        <div>
+        <div data-aos="fade-down">
           <Hero lang={lang} />
         </div>
-        <div>
-          <Title icon={<AiOutlineFundProjectionScreen size={40} color="#22d3ee" />}>
+        <div data-aos="fade-up">
+          <Title
+            icon={<AiOutlineFundProjectionScreen size={40} color="#22d3ee" />}
+          >
             {home.projectsTitle[lang]}
           </Title>
           <Projects lang={lang} />
         </div>
         <div style={{ marginTop: 50 }}>
-          <Title icon={<CiStar size={40} color="#22d3ee" strokeWidth="1" />}>
+          <Title icon={<CiStar size={40} color="#22d3ee" strokeWidth="1" />}  data-aos="fade-up" >
             {home.skillsTitle[lang]}
           </Title>
           <Skills />
         </div>
         <div style={{ marginTop: 50 }}>
-          <Title icon={<MdOutlineWorkOutline size={40} color="#22d3ee" />}>
+          <Title icon={<MdOutlineWorkOutline size={40} color="#22d3ee" />}  data-aos="fade-up" >
             {home.experienceTitle[lang]}
           </Title>
           <Experience lang={lang} />

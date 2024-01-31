@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react";
+import React, { PropsWithChildren, useEffect } from "react";
 import "./Projects.css";
 import { Card } from "../skills/Card/Card";
 import { FaGithub } from "react-icons/fa";
@@ -101,6 +101,7 @@ export const projects = [
 export const Projects = ({
   lang,
 }: PropsWithChildren<{ lang: "es" | "en" }>) => {
+
   return (
     <section
       style={{
@@ -115,6 +116,7 @@ export const Projects = ({
           key={`${index}_project`}
           pointerColor={p?.color || null}
           styles={{ width: "100%" }}
+   
         >
           <div
             style={{

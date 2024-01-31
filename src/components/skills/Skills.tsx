@@ -63,7 +63,7 @@ export const Skills = () => {
     <section>
       <div className="skills-container">
         {skills.map((s, i) => (
-          <Card key={`skill_${i}_${s.name}`} style={{ flexGrow: 1 }} pointerColor={s.colorHover}>
+          <Card key={`skill_${i}_${s.name}`} style={{ flexGrow: 1 }} pointerColor={s.colorHover} data-aos="fade-up" >
             <div style={{display: 'flex', justifyContent: 'center', gap: 16, alignItems: 'center', fontWeight: 800}}>
               <div
                 style={{
