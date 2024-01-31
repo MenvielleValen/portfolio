@@ -7,13 +7,18 @@ import { SiMicrosoftsqlserver } from "react-icons/si";
 import { SiJira } from "react-icons/si";
 import { GiJesterHat } from "react-icons/gi";
 import { Card } from "./Card/Card";
-import { FaMobileAlt } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 
 const skills = [
   {
     name: "Angular",
     icon: <FaAngular size={80} color="#c3002f" />,
     colorHover: "#c3002f",
+  },
+  {
+    name: "NextJS",
+    icon: <SiNextdotjs size={80} color="#ffffff" />,
+    colorHover: "#ccc",
   },
   {
     name: "React",
@@ -34,11 +39,6 @@ const skills = [
     name: "NodeJS",
     icon: <FaNodeJs size={80} color="#659a60" />,
     colorHover: "#659a60",
-  },
-  {
-    name: "Jest",
-    icon: <GiJesterHat size={80} color="#c21325" />,
-    colorHover: "#c21325",
   },
   {
     name: "MongoDB",

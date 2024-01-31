@@ -8,7 +8,7 @@ import { CiStar } from "react-icons/ci";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { Experience } from "./components/experience/Experience";
 import { useEffect, useState } from "react";
-import { CustomButton } from "./components/custom-button/CustomButton";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { ToggleButton } from "./components/custom-button/toggleButton/ToggleButton";
 import { Projects } from "./components/projects/Projects";
 
@@ -89,8 +89,8 @@ function App() {
         <div>
           <Hero lang={lang} />
         </div>
-        <div style={{ marginTop: 50 }}>
-          <Title icon={<MdOutlineWorkOutline size={40} color="#22d3ee" />}>
+        <div>
+          <Title icon={<AiOutlineFundProjectionScreen size={40} color="#22d3ee" />}>
             {home.projectsTitle[lang]}
           </Title>
           <Projects lang={lang} />
