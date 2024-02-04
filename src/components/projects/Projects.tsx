@@ -96,12 +96,42 @@ export const projects = [
     website: "https://minlink.vercel.app/",
     color: "#574ED9",
   },
+  {
+    title: {
+      es: "use-detector-hook (package)",
+      en: "use-detector-hook (package)",
+    },
+    description: {
+      es: (
+        <div>
+          <p>
+            use-detector-hook es una biblioteca simple que he desarrollado para
+            React/Next.js, la cual está disponible en <b>npm / yarn</b>. Incluye
+            un hook <b>useElementDetector</b> que permite detectar cuándo un
+            elemento está en la pantalla.
+          </p>
+        </div>
+      ),
+      en: (
+        <div>
+          <p>
+            use-detector-hook is a simple library I've developed for
+            React/Next.js, which is available on <b>npm / yarn</b>. It features
+            a hook <b>useElementDetector</b> that allows detecting when an
+            element is on the screen.
+          </p>
+        </div>
+      ),
+    },
+    github: "https://github.com/MenvielleValen/use-element-detector",
+    website: "https://www.npmjs.com/package/use-detector-hook",
+    color: "#EA2039",
+  },
 ];
 
 export const Projects = ({
   lang,
 }: PropsWithChildren<{ lang: "es" | "en" }>) => {
-
   return (
     <section
       style={{
@@ -116,7 +146,6 @@ export const Projects = ({
           key={`${index}_project`}
           pointerColor={p?.color || null}
           styles={{ width: "100%" }}
-   
         >
           <div
             style={{
@@ -135,11 +164,13 @@ export const Projects = ({
                 width: "100%",
               }}
             >
-              <img
-                src={p.image}
-                style={{ height: 300, width: "100%", objectFit: "cover" }}
-                alt={p.title[lang]}
-              />
+              {p.image && (
+                <img
+                  src={p.image}
+                  style={{ height: 300, width: "100%", objectFit: "cover" }}
+                  alt={p.title[lang]}
+                />
+              )}
               <div
                 style={{ display: "flex", flexDirection: "column", gap: 16 }}
               >
