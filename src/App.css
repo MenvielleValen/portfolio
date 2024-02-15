@@ -14,6 +14,7 @@
   left: 0;
   margin: auto;
   width: 100%;
+  z-index: 1;
 }
 .header-links-container{
   width: 100%;

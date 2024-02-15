@@ -127,6 +127,30 @@ export const projects = [
     website: "https://www.npmjs.com/package/use-detector-hook",
     color: "#EA2039",
   },
+  {
+    title: {
+      es: "Next.js 14 - Authentication Template with NextAuth.js and MongoDB",
+      en: "Next.js 14 - Authentication Template with NextAuth.js and MongoDB",
+    },
+    description: {
+      es: (
+        <div>
+          <p>
+          Este proyecto constituye una plantilla preconfigurada que combina <b>Next.js 14</b> con <b>NextAuth</b>, diseñada bajo una licencia de código abierto. Está especialmente desarrollada para facilitar el inicio de proyectos con un sistema de autenticación ya establecido. Por defecto, incluye la configuración para los siguientes proveedores de autenticación: <b>Email, Google, GitHub y GitLab</b>
+          </p>
+        </div>
+      ),
+      en: (
+        <div>
+          <p>
+          This project is a preconfigured template that merges <b>Next.js 14</b> with <b>NextAuth</b>, designed under an open-source license. It is specifically developed to facilitate the initiation of projects with an already established authentication system. By default, it includes configurations for the following authentication providers: <b>Email, Google, GitHub, and GitLab</b>
+          </p>
+        </div>
+      ),
+    },
+    github: "https://github.com/MenvielleValen/nextjs-auth-template",
+    color: "#ccc",
+  },
 ];
 
 export const Projects = ({
