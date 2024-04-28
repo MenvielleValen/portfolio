@@ -7,6 +7,55 @@ import { TbWorld } from "react-icons/tb";
 export const projects = [
   {
     title: {
+      es: "Monoblock - Aplicación reservas",
+      en: "Monoblock - Reservation App",
+    },
+    description: {
+      es: (
+        <div>
+          <p>
+            El desarrollo para el restaurante <b>Monoblock</b> consta de dos
+            aplicaciones: una para que las personas puedan realizar sus reservas
+            y otra para administrar los eventos y las reservas realizadas.
+            Utiliza MercadoPago como pasarela de pago para confirmar las
+            reservas y envía correos electrónicos con los detalles de la reserva
+            y el código QR correspondiente. Este código QR redirige a los
+            usuarios a la página de su reserva.
+          </p>
+          <br />
+          <p>
+            Tanto la aplicación para las personas como la aplicación de
+            administración están desarrolladas en <b>Next.js</b> y utilizan{" "}
+            <b>MongoDB</b>
+            como base de datos.
+          </p>
+        </div>
+      ),
+      en: (
+        <div>
+          <p>
+            The development for the <b>Monoblock</b> restaurant consists of two
+            applications: one for users to make their reservations and another
+            one to manage the events and bookings. It uses MercadoPago as a
+            payment gateway to confirm the reservations and sends emails with
+            the reservation details and the corresponding QR code. This QR code
+            redirects users to their reservation page.
+          </p>
+          <br />
+          <p>
+            Both the user-facing application and the administration application
+            are developed in <b>Next.js</b> and use <b>MongoDB</b> as the
+            database.
+          </p>
+        </div>
+      ),
+    },
+    image: "./assets/images/monoblock.png",
+    website: "https://monoblock-app.vercel.app/",
+    color: "#000000",
+  },
+  {
+    title: {
       es: "MinLink - URL Shortener",
       en: "MinLink - URL Shortener",
     },
@@ -136,14 +185,24 @@ export const projects = [
       es: (
         <div>
           <p>
-          Este proyecto constituye una plantilla preconfigurada que combina <b>Next.js 14</b> con <b>NextAuth</b>, diseñada bajo una licencia de código abierto. Está especialmente desarrollada para facilitar el inicio de proyectos con un sistema de autenticación ya establecido. Por defecto, incluye la configuración para los siguientes proveedores de autenticación: <b>Email, Google, GitHub y GitLab</b>
+            Este proyecto constituye una plantilla preconfigurada que combina{" "}
+            <b>Next.js 14</b> con <b>NextAuth</b>, diseñada bajo una licencia de
+            código abierto. Está especialmente desarrollada para facilitar el
+            inicio de proyectos con un sistema de autenticación ya establecido.
+            Por defecto, incluye la configuración para los siguientes
+            proveedores de autenticación: <b>Email, Google, GitHub y GitLab</b>
           </p>
         </div>
       ),
       en: (
         <div>
           <p>
-          This project is a preconfigured template that merges <b>Next.js 14</b> with <b>NextAuth</b>, designed under an open-source license. It is specifically developed to facilitate the initiation of projects with an already established authentication system. By default, it includes configurations for the following authentication providers: <b>Email, Google, GitHub, and GitLab</b>
+            This project is a preconfigured template that merges{" "}
+            <b>Next.js 14</b> with <b>NextAuth</b>, designed under an
+            open-source license. It is specifically developed to facilitate the
+            initiation of projects with an already established authentication
+            system. By default, it includes configurations for the following
+            authentication providers: <b>Email, Google, GitHub, and GitLab</b>
           </p>
         </div>
       ),
