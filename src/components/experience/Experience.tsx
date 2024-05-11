@@ -6,14 +6,27 @@ import { IoIosLink } from "react-icons/io";
 const experiences = {
   es: [
     {
+      title: "Software developer",
+      company: "Mercado Libre",
+      subtitle: "may. 2024 - actualidad",
+      resume:
+        " ",
+      links: [
+        {
+          title: "Mercado Libre - Argentina",
+          href: "https://mercadolibre.com.ar",
+        },
+      ],
+    },
+    {
       title: "SSR Software developer",
       company: "COA Tecnología de la Información Aplicada",
-      subtitle: "oct. 2021 - actualidad",
+      subtitle: "oct. 2021 - may. 2024",
       resume:
         "TypeScript · Angular · Integración continua y entrega continua (CI/CD) · Transferencia de Estado Representacional (REST) · Desarrollo de software · Desarrollo front end · NgRx · Angular Material · SQL · Microsoft SQL Server",
       links: [
         {
-          title: "COA Website",
+          title: "COA",
           href: "https://www.coa.com.ar/",
         },
       ],
@@ -21,14 +34,27 @@ const experiences = {
   ],
   en: [
     {
+      title: "Software developer",
+      company: "Mercado Libre",
+      subtitle: "may. 2024 - present",
+      resume:
+        " ",
+      links: [
+        {
+          title: "Mercado Libre - Argentina",
+          href: "https://mercadolibre.com.ar",
+        },
+      ],
+    },
+    {
       title: "SSR Software developer",
       company: "COA Tecnología de la Información Aplicada",
-      subtitle: "oct. 2021 - present",
+      subtitle: "oct. 2021 - may. 2024",
       resume:
         "TypeScript · Angular · Integración continua y entrega continua (CI/CD) · API REST · Software development · Frontend development · NgRx · Angular Material · SQL · Microsoft SQL Server",
       links: [
         {
-          title: "COA Website",
+          title: "COA",
           href: "https://www.coa.com.ar/",
         },
       ],
