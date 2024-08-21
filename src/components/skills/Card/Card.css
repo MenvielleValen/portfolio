@@ -1,7 +1,7 @@
 .card {
   background-color: #1118275d;
   border-radius: 10px;
-    position: relative;
+  position: relative;
   padding: 2rem;
   color: #fff;
   gap: 16px;
@@ -10,6 +10,7 @@
   border: 1px solid #494949;
   overflow: hidden;
   cursor: default;
+  max-width: 100% !important;
 }
 
 .pointer-card {

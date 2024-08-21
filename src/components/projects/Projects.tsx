@@ -262,7 +262,6 @@ export const Projects = ({
         <Card
           key={`${index}_project`}
           pointerColor={p?.color || null}
-          styles={{ width: "100%" }}
         >
           <div
             style={{
