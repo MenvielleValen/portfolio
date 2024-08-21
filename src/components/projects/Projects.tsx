@@ -7,6 +7,40 @@ import { TbWorld } from "react-icons/tb";
 export const projects = [
   {
     title: {
+      es: "Responsive Lab",
+      en:  "Responsive Lab",
+    },
+    description: {
+      es: (
+        <div>
+          <p>
+          Responsive Lab es una aplicación que desarrollé en un día, inspirada en herramientas que permiten visualizar sitios o aplicaciones web en diversas resoluciones. Utiliza iframes para renderizar el contenido en resoluciones predefinidas, y también ofrece la flexibilidad de agregar nuevas resoluciones personalizadas. Esta herramienta es útil para desarrolladores y diseñadores que desean comprobar rápidamente la adaptabilidad de sus proyectos web en diferentes tamaños de pantalla, sin la necesidad de descargar alguna aplicación mas compleja.
+          </p>
+          <br />
+          <p>
+            Utilicé <b>Next.js</b> para el desarrollo. Además, esta aplicación es de código abierto.
+          </p>
+        </div>
+      ),
+      en: (
+        <div>
+          <p>
+            Responsive Lab is an application I developed in one day, inspired by tools that allow you to view websites or web applications in various resolutions. It uses iframes to render content in predefined resolutions, and also offers the flexibility to add new custom resolutions. This tool is useful for developers and designers who want to quickly check the adaptability of their web projects across different screen sizes, without the need to download a more complex application.
+          </p>
+          <br />
+          <p>
+            I used <b>Next.js</b> for the development. Additionally, this application is open source.
+          </p>
+        </div>
+      ),
+    },
+    image: "./assets/images/responsivelab.png",
+    website: "https://responsivelab.vercel.app/",
+    github: "https://github.com/MenvielleValen/check-responsive",
+    color: "#CCCCCC",
+  },
+  {
+    title: {
       es: "Monoblock - Aplicación reservas",
       en: "Monoblock - Reservation App",
     },
